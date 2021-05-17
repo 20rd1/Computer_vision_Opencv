@@ -10,6 +10,7 @@ imgCanny = cv2.Canny(img,100,100)
 imgDialation = cv2.dilate(imgCanny,kernel,iterations=1)
 imgEroded = cv2.erode(imgDialation,kernel,iterations=1)
 
+
 cv2.imshow("Normal",img)
 cv2.imshow("Gary Image",imgGray)
 cv2.imshow("Blur Image",imgBlur)
